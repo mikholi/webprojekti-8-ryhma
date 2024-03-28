@@ -6,6 +6,8 @@ sakkenaattori: Saku Sarajärvi
 
 aaposarlin: Aapo Sarlin
 
+mikholi: Mikko Keränen
+
 AleksiHarma: Aleksi Härmä
 
 n3lusa00: Samuli Luttinen
