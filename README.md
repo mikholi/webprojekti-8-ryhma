@@ -3,9 +3,13 @@
 **RYHMÄN JÄSENET**
 
 sakkenaattori: Saku Sarajärvi
+
 aaposarlin: Aapo Sarlin
+
 AleksiHarma: Aleksi Härmä
+
 n3lusa00: Samuli Luttinen
+
 HeikkiTakalo: Heikki Takalo
 
 **LINKKI RYMHÄN HACKNPLANIIN**
