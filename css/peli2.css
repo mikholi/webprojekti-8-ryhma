@@ -1,4 +1,4 @@
-/* Import Google font - Poppins */
+
 
 *{
   margin: 0;
@@ -12,7 +12,7 @@ body{
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  background: #96a9a5;
+  background: #1c9fc0;
 }
 .wrapper{
   width: 700px;
@@ -31,6 +31,7 @@ body{
   font-weight: 500;
   padding: 20px 25px;
   border-bottom: 1px solid #ccc;
+  text-align: center;
 }
 .wrapper .content{
   margin: 25px 25px 35px;
@@ -69,9 +70,10 @@ body{
 .details p{
   font-size: 19px;
   margin-bottom: 10px;
+  text-align: center;
 }
 .reset-btn{
-  width: 100%;
+  width: 20%;
   border: none;
   cursor: pointer;
   color: #fff;
@@ -79,7 +81,21 @@ body{
   padding: 15px 0;
   font-size: 17px;
   border-radius: 5px;
-  background: #d2c61d;
+  background: #1d44d2;
+  transition: all 0.3s ease;
+}
+
+.next-level {
+  display: none;
+  width: 20%;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  padding: 15px 0;
+  font-size: 17px;
+  border-radius: 5px;
+  background: #1d44d2;
   transition: all 0.3s ease;
 }
 .content .reset-btn:hover{

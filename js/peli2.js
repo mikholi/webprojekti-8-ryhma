@@ -7,6 +7,7 @@ typingInput = document.querySelector(".typing-input")
 
 let word, maxGuesses, incorrectLetters = [], correctLetters = []
 
+
 function randomWord() {
     let ranItem = wordList[Math.floor(Math.random() * wordList.length)]
     word = ranItem.word
