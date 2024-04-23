@@ -73,7 +73,7 @@ body{
   text-align: center;
 }
 .reset-btn{
-  width: 20%;
+  width: 50%;
   border: none;
   cursor: pointer;
   color: #fff;
@@ -81,13 +81,15 @@ body{
   padding: 15px 0;
   font-size: 17px;
   border-radius: 5px;
-  background: #1d44d2;
+  background: #d21d20;
   transition: all 0.3s ease;
+  position: absolute;
+  left: 25%;
 }
 
 .next-level {
   display: none;
-  width: 20%;
+  width: 50%;
   border: none;
   cursor: pointer;
   color: #fff;
@@ -97,6 +99,8 @@ body{
   border-radius: 5px;
   background: #1d44d2;
   transition: all 0.3s ease;
+  position: absolute;
+  left: 25%;
 }
 .content .reset-btn:hover{
   background: #18a589;

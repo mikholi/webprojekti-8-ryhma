@@ -1,32 +1,17 @@
 const wordList = [
-    {
-        word: "ruotsi",
-        hint: "Suomen toinen virallinen kieli"
-    },
-
-    {
-        word: "verbi",
-        hint: "ilmaisee tekemistä ja olemista"
-
-    },
-
-    {
-        word: "runo",
-        hint: "kirjoitettu soinnilliseen muotoon"
-    },
-
-    {
-        word: "romaani",
-        hint: "kirjallinen teos"
-    },
-
-    {
-        word: "kalevala",
-        hint: "Suomen kansalliseepos"
-    }
+    [
+        { word: "verbi", hint: "kuvaa tekemistä ja olemista" },
+        { word: "kalevala", hint: "Suomen kansallisteos" },
+        { word: "kivi", hint: "Seitsemän veljeksen kirjoittajan sukunimi" },
+        { word: "adjektiivi", hint: "kuvaa millainen tai minkälainen asia on" },
+        { word: "ruotsi", hint: "Suomen toinen virallinen kieli" }
+    ],
+    [
+        {  },
+        {  },
+        {  },
+        { },
+        { }
+    ],
     
-       
-]
-
-//Jokaisessa tasossa 10 kysymystä, tasoja voisi olla 5, tämän jälkeen tulee high score lista johon peli kysyy 
-//käyttäjänimen//
+];
