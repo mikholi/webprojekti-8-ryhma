@@ -7,6 +7,7 @@ const nextLevelBtn = document.querySelector(".next-level")
 typingInput = document.querySelector(".typing-input")
 
 let currentLevel = 0; 
+let totalGuesses = 10;
 let currentWordIndex = 0; 
 let word, maxGuesses, incorrectLetters = [], correctLetters = [];
 
@@ -18,7 +19,7 @@ function randomWord() {
     correctLetters = [];
     incorrectLetters = [];
     hintTag.innerText = ranItem.hint;
-    guessLeft.innerText = maxGuesses;
+    guessLeft.innerText = totalGuesses;
     wrongLetter.innerText = incorrectLetters;
 
     let html = "";
@@ -28,13 +29,27 @@ function randomWord() {
     inputs.innerHTML = html;
 }
 
+function startNextLevel() {
+    currentLevel++; 
+    currentWordIndex = 0; 
+    totalGuesses = 10; 
+    nextLevelBtn.style.display = "none"; 
+    resetBtn.style.display = "block"; 
+    randomWord(); 
+}
+
+
 function checkLevelCompletion() {
-    if (currentWordIndex >= wordList[currentLevel].length) {
+    if (currentWordIndex === 5) { 
+        currentWordIndex = 0; 
+        currentLevel++; 
         resetBtn.style.display = "none"; 
         nextLevelBtn.style.display = "block";
-        alert("Onnea! Pääset seuraavalle tasolle!")
+        alert("Onnea! Pääset seuraavalle tasolle!");
     }
-} //Pelin resetointi ei toimi vielä oikein//
+}
+
+
 
 function initGame(e) {
     let key = e.target.value.toLowerCase();
@@ -48,11 +63,12 @@ function initGame(e) {
                 }
             }
         } else {
-            maxGuesses--;
+            totalGuesses--;
+            guessLeft.innerText = totalGuesses;
             incorrectLetters.push(` ${key}`);
+            wrongLetter.innerText = incorrectLetters;
         }
-        guessLeft.innerText = maxGuesses;
-        wrongLetter.innerText = incorrectLetters;
+       
     }
     typingInput.value = "";
 
@@ -61,7 +77,7 @@ function initGame(e) {
             currentWordIndex++; 
             checkLevelCompletion(); 
             randomWord(); 
-        } else if (maxGuesses < 1) {
+        } else if (totalGuesses < 1) {
             alert("Peli loppui! Sinulla ei ole arvauksia jäljellä!");
             
         }
