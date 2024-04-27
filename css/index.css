@@ -1,0 +1,17 @@
+html, body {
+    height: 90%;
+    margin: 0;
+}
+
+.container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: auto; 
+    width: 100%;
+    background-color: #505860; 
+    border-top: 1px solid #e9ecef;
+}

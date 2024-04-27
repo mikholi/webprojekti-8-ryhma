@@ -40,8 +40,8 @@ let words = [
         hint: "täältä voi lainata kirjoja"
     },
     {
-        word: "kirjoittaa runoja",
-        hint: "runoilija"
+        word: "runoilija",
+        hint: "kirjoittaa runoja"
     },
     {
         word: "säe",
