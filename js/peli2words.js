@@ -20,44 +20,84 @@ let words = [
         hint: "Suomen toinen virallinen kieli"
     },
     {
-        word: "",
-        hint: ""
+        word: "romaani",
+        hint: "sepitteellinen kirjallinen teos"
     },
     {
-        word: "",
-        hint: ""
+        word: "satu",
+        hint: "näitä luetaan yleensä lapsille"
     },
     {
-        word: "feather",
-        hint: ""
+        word: "tarina",
+        hint: "sepitteellinen kertomus"
     },
     {
-        word: "",
-        hint: ""
+        word: "kielioppi",
+        hint: "kielen sääntöjen joukko"
     },
     {
-        word: "",
-        hint: ""
+        word: "kirjasto",
+        hint: "täältä voi lainata kirjoja"
     },
     {
-        word: "",
-        hint: ""
+        word: "kirjoittaa runoja",
+        hint: "runoilija"
     },
     {
-        word: "",
-        hint: ""
+        word: "säe",
+        hint: "runon tai sävellyksen osa"
     },
     {
-        word: "",
-        hint: ""
+        word: "kappale",
+        hint: "tekstin jakso"
     },
     {
-        word: "",
-        hint: ""
+        word: "sanakirja",
+        hint: "teos josta löytyy sanoja"
     },
     {
-        word: "",
-        hint: ""
+        word: "tietokirja",
+        hint: "teos josta löytyy tietoa"
+    }, // 15 sanaa
+    {
+        word: "lönnrot",
+        hint: "Kalevalan kirjoittaja"
     },
+    {
+        word: "murre",
+        hint: "puhetyyli, myös koiran nimi"
+    },
+    {
+        word: "lukutaito",
+        hint: "tärkeä taito"
+    },
+    {
+        word: "vokaali",
+        hint: "a,e,i,o,u..."
+    },
+    {
+        word: "aapinen",
+        hint: "kirja joka opettaa lukemista"
+    },
+    {
+        word: "suomentaja",
+        hint: "kääntää kirjallisuutta"
+    },
+    {
+        word: "piste",
+        hint: "päättää lauseen"
+    },
+    {
+        word: "pilkku",
+        hint: "välimerkki"
+    },
+    {
+        word: "konsonantti",
+        hint: "äänteiden toinen ryhmä"
+    },
+    {
+        word: "teksti",
+        hint: "luettavaksi tarkoitettu kirjoitus"
+    }, //25 sanaa
     
 ]
