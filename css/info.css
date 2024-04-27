@@ -1,17 +1,13 @@
-.content-container {
-    margin-top: 30px;
+
+.carousel-item {
+    height: 90vh; 
 }
 
-html, body {
-    height: 90%;
-    margin: 0;
+
+.carousel-item img {
+    height: 100%; 
 }
 
-.container {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-}
 
 .footer {
     margin-top: auto; 
