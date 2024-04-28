@@ -11,7 +11,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #4c5fad;
+  background-image: url(../img/words.jpg);
 }
 
 .container {
@@ -24,11 +24,13 @@ body {
 
 
 .container h2 {
-  font-size: 25px;
+  font-size: 40px;
   font-weight: 500;
   padding: 16px 25px;
   border-bottom: 1px solid #ccc;
   text-align: center;
+  font-family: 'Jersey 25', sans-serif;
+
 }
 
 .container .content {
