@@ -15,3 +15,8 @@
     background-color: #505860; 
     border-top: 1px solid #e9ecef;
 }
+
+.mikko-kuva {
+    width: 100px; /* Adjust the width to your desired size */
+    height: auto; /* Maintain aspect ratio */
+}
