@@ -11,7 +11,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-image: url(../img/words.jpg);
+  background-image: url(../img/words2.jpg);
 }
 
 .container {
@@ -132,4 +132,38 @@ body {
   justify-content: space-between;
 }
 
+#high-scores {
+  margin-bottom: 250px;
+  margin-right: 300px;
+  border-radius: 10px;
+  padding: 30px;
+  background-color: #f8f9fa; 
+}
 
+#high-scores h3 {
+  font-family: 'Jersey 25', sans-serif;
+  color: #343a40; 
+}
+
+#high-scores-list {
+  padding-left: 0;
+}
+
+#high-scores-list .list-group-item {
+  background-color: #ffffff; /* Vaihda väri tarvittaessa */
+  border: none;
+}
+
+#high-scores-list .list-group-item:nth-child(even) {
+  background-color: #f8f9fa; /* Vaihda väri tarvittaessa */
+}
+
+#high-scores-list .list-group-item:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#high-scores-list .list-group-item:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}

@@ -49,7 +49,7 @@ const checkWord = () => {
     if(userWord !== correctWord) {
         guessesLeft--; 
         if(guessesLeft === 0) {
-            alert("Peli loppui, sinulla ei ole enää arvauksia jäljellä");
+            alert("Peli loppui, sinulla ei ole enää arvauksia jäljellä!");
             initGame(); 
         } else {
             alert(`Hups! ${userWord} ei ole oikea sana! Sinulla on jäljellä ${guessesLeft} yritystä.`);
@@ -60,8 +60,9 @@ const checkWord = () => {
             alert("Onneksi olkoon! Olet arvannut 25 sanaa oikein!")
             return
         }
+        initGame()
     }
-    initGame()
+    
 }
 refreshBtn.addEventListener("click", initGame);
 gameStartBtn.addEventListener("click", startGame)
