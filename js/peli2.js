@@ -6,7 +6,7 @@ refreshBtn = document.querySelector(".refresh-word"),
 checkBtn = document.querySelector(".check-word");
 
 
-let correctWord, timer, guessesLeft;
+let correctWord, timer, guessesLeft, correctWordCount = 0;
 
 const initTimer = maxTime => {
     clearInterval(timer);
@@ -55,10 +55,13 @@ const checkWord = () => {
             alert(`Hups! ${userWord} ei ole oikea sana! Sinulla on jäljellä ${guessesLeft} yritystä.`);
         }
     } else {
-        alert(`Onnea! ${correctWord.toUpperCase()} on oikea sana!`);
-        initGame();
+        correctWordCount++
+        if(correctWordCount === 25) {
+            alert("Onneksi olkoon! Olet arvannut 25 sanaa oikein!")
+            return
+        }
     }
+    initGame()
 }
-
 refreshBtn.addEventListener("click", initGame);
 gameStartBtn.addEventListener("click", startGame)
