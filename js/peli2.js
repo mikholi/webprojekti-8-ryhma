@@ -6,7 +6,7 @@ refreshBtn = document.querySelector(".refresh-word"),
 checkBtn = document.querySelector(".check-word");
 
 
-let correctWord, timer;
+let correctWord, timer, guessesLeft;
 
 const initTimer = maxTime => {
     clearInterval(timer);
@@ -21,6 +21,7 @@ const initTimer = maxTime => {
 }
 
 const initGame = () => {
+    guessesLeft = 10;
     initTimer(30);
     let randomObj = words[Math.floor(Math.random() * words.length)];
     let wordArray = randomObj.word.split("");
@@ -33,6 +34,7 @@ const initGame = () => {
     correctWord = randomObj.word.toLowerCase();;
     inputField.value = "";
     inputField.setAttribute("maxlength", correctWord.length);
+    checkBtn.addEventListener("click", checkWord);
 }
 
 const gameStartBtn = document.querySelector(".start-game-btn")
@@ -44,11 +46,19 @@ const startGame = () => {
 const checkWord = () => {
     let userWord = inputField.value.toLowerCase();
     if(!userWord) return alert("Anna sana tarkistettavaksi!");
-    if(userWord !== correctWord) return alert(`Hups! ${userWord} ei ole oikea sana!`);
-    alert(`Onnea! ${correctWord.toUpperCase()} on oikea sana!`);
-    initGame();
+    if(userWord !== correctWord) {
+        guessesLeft--; 
+        if(guessesLeft === 0) {
+            alert("Peli loppui, sinulla ei ole enää arvauksia jäljellä");
+            initGame(); 
+        } else {
+            alert(`Hups! ${userWord} ei ole oikea sana! Sinulla on jäljellä ${guessesLeft} yritystä.`);
+        }
+    } else {
+        alert(`Onnea! ${correctWord.toUpperCase()} on oikea sana!`);
+        initGame();
+    }
 }
 
 refreshBtn.addEventListener("click", initGame);
-checkBtn.addEventListener("click", checkWord);
 gameStartBtn.addEventListener("click", startGame)
