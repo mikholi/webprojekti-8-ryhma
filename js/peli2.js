@@ -63,10 +63,11 @@ const startGame = () => {
 
 const checkWord = () => {
     let userWord = inputField.value.toLowerCase();
-    if(!userWord) return alert("Anna sana tarkistettavaksi!");
-    if(userWord !== correctWord) {
+    if (!userWord) return alert("Anna sana tarkistettavaksi!");
+
+    if (userWord !== correctWord) {
         guessesLeft--;
-        if(guessesLeft === 0) {
+        if (guessesLeft === 0) {
             alert("Peli loppui, sinulla ei ole enää arvauksia jäljellä!");
             initGame();
         } else {
@@ -74,13 +75,11 @@ const checkWord = () => {
         }
     } else {
         correctWordCount++;
-        if(correctWordCount === 15) {
-        
+        if (correctWordCount === 15) {
             alert("Onneksi olkoon! Olet arvannut 15 sanaa oikein!");
-            const playerName = prompt("Anna nimesi tallentaaksesi pisteesi:");
+            const playerName = prompt("Anna nimesi High Score-taulukkoon:");
             if (playerName) {
-                
-                highScores.push({ name: playerName, score: correctWordCount });
+                highScores.push({ name: playerName, score: correctWordCount - 1 });
                 localStorage.setItem("highScores", JSON.stringify(highScores));
                 updateHighScores();
             }
@@ -89,6 +88,8 @@ const checkWord = () => {
         initGame();
     }
 };
+
+
 
 refreshBtn.addEventListener("click", initGame);
 gameStartBtn.addEventListener("click", startGame);
