@@ -18,10 +18,16 @@ html, body {
 
 p {
     font-family: "Corben", serif;
+    color: #e9ecef;
 }
 
 h2 {
     font-family: "Corben", serif;
+    color: #e9ecef;
+}
+
+body {
+    background-image: url(../img/digital-8280778_1280.jpg);
 }
 
   
