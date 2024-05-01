@@ -1,3 +1,5 @@
 **UI-SUUNNITELMA**
 
-Alussa jo päätimme että käytämme sivuston ulkoasun teossa bootsrapia. Tämä se on takia että se säästää aikaa ja myös sen avulla responsiivisuus on helppo toteuttaa.
+Alussa jo päätimme että käytämme sivuston ulkoasun teossa bootsrapia. Tämä se on takia että se säästää aikaa ja myös 
+sen avulla responsiivisuus on helppo toteuttaa. Kävimme läpi miten pelien linkitys oli järkevin ja käytimme card-pohjaa
+bootstrapilla. Info-sivulle laitettiin slideri-jota rullaamalla jokaisen oppilaan tiedot pystyi katsomaan.
