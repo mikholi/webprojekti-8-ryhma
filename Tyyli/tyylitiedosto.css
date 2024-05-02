@@ -1,6 +1,6 @@
 .content {
     text-align: center;
-    margin-top: 5vh;
+    margin-top: 10vh;
     margin-bottom: 90px;
     
 }
@@ -134,3 +134,9 @@ body.overlay-is-open .main-ui {
 .reset-button:focus {
     background-color: darkolivegreen;
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+  }
+
