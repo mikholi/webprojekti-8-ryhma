@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Game</title>
+    <link href="Tyyli/tyylitiedosto.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="content">
+        <h1>Math Game</h1>
+    </div>
+
+    <div class="main-ui">
+        <p class="problem"></p>
+
+        <form action="" class="my-form">
+            <input type="text" class="my-field" autocomplete="off">
+            <button>Submit</button>
+        </form>
+
+        <p class="status">You need <span class="points-needed">10</span> more points, and are allowed to make <span class="mistakes-allowed">2</span> more mistakes.</p>
+
+        <div class="progress">
+            <div class="boxes">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="progress-inner"></div>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="overlay-inner">
+            <p class="end-message" ></p>
+            <button class ="reset-button">Start Over</button>
+        </div>
+    </div>
+ <script src="Java/java.js"></script> 
+</body>
+</html>
