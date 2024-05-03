@@ -71,12 +71,12 @@ body {
     display: none;
 }
 
-.correct {
-    background: #9aeabc;
+.btn.correct {
+    background: #9aeabc !important;
 }
 
-.incorrect {
-    background: #ff9393;
+.btn.incorrect {
+    background-color: #ff9393 !important;
 }
 
 img {
