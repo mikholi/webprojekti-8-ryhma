@@ -11,18 +11,17 @@ let correctWord, timer, guessesLeft, correctWordCount = 0;
 
 let highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
+
 const updateHighScores = () => {
-    
     highScores.sort((a, b) => b.score - a.score);
+
     
+    localStorage.setItem("highScores", JSON.stringify(highScores));
+
     
-    highScoresList.innerHTML = "";
-    highScores.slice(0, 10).forEach((score, index) => {
-        const li = document.createElement("li");
-        li.textContent = `${score.name}: ${score.score} pistettä`;
-        highScoresList.appendChild(li);
-    });
+    window.location.href = "kooste.html";
 };
+
 
 const initTimer = maxTime => {
     clearInterval(timer);
@@ -34,6 +33,7 @@ const initTimer = maxTime => {
         alert(`Aika loppui! ${correctWord.toUpperCase()} oli oikea sana!`);
         initGame();
     }, 1000);
+    
 };
 
 const initGame = () => {
@@ -76,7 +76,7 @@ const checkWord = () => {
     } else {
         correctWordCount++;
         if (correctWordCount === 15) {
-            alert("Onneksi olkoon! Olet arvannut 15 sanaa oikein!");
+            alert("Läpäisit pelin!");
             const playerName = prompt("Anna nimesi High Score-taulukkoon:");
             if (playerName) {
                 highScores.push({ name: playerName, score: correctWordCount - 1 });
@@ -93,3 +93,4 @@ const checkWord = () => {
 
 refreshBtn.addEventListener("click", initGame);
 gameStartBtn.addEventListener("click", startGame);
+
