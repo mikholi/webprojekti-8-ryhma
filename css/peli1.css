@@ -17,7 +17,6 @@ html {
     font-size: 60%;
     font-weight: 400;
     line-height: 1.6;
-    scroll-behavior: smooth;
 }
 
 body {
@@ -70,35 +69,6 @@ h3 {
     margin-right: auto;
 }
 
-@media(min-width: 576px) {
-    .container {
-        width: 540px;
-    }
-}
-
-@media(min-width: 768px) {
-    .container {
-        width: 720px;
-    }
-}
-
-@media(min-width: 992px) {
-    .container {
-        width: 960px;
-    }
-}
-
-@media(min-width: 1200px) {
-    .container {
-        width: 1140px;
-    }
-}
-
-@media(min-width: 1400px) {
-    .container {
-        width: 1320px;
-    }
-}
 
 .box {
     display: flex;
@@ -131,23 +101,9 @@ h3 {
 .liput .lippu-img img {
     width: 100%;
     height: 20rem;
-    animation: zoom-in-zoom-out 3s ease-in infinite;
     border-radius: .5rem;
 }
 
-@keyframes zoom-in-zoom-out {
-    0% {
-        transform: scale(1, 1);
-    }
-
-    50% {
-        transform: scale(1.1, 1.1);
-    }
-
-    100% {
-        transform: scale(1, 1);
-    }
-}
 
 .liput .vaihtoehdot {
     margin-top: 2rem;
@@ -164,6 +120,7 @@ h3 {
     font-size: 2.5rem;
     text-transform: capitalize;
     margin-bottom: 1.5rem;
+    margin-right: 1.6rem;
     background-color: var(--white);
     padding: 1rem;
     border-radius: .5rem;
@@ -239,3 +196,9 @@ h3 {
         color: var(--white);
     }
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
