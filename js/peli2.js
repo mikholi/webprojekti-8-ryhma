@@ -57,7 +57,6 @@ const gameStartBtn = document.querySelector(".start-game-btn");
 
 const startGame = () => {
     correctWordCount = 0; 
-    updateHighScores(); 
     initGame();
 };
 
