@@ -1,0 +1,182 @@
+[
+    {
+        "img": "argentiina.png",
+        "options": [
+            "guatemala",
+            "argentiina",
+            "uruguay"
+        ],
+        "right_answer": "argentiina"
+    },
+    {
+        "img": "brasilia.png",
+        "options": [
+            "bolivia",
+            "chile",
+            "brasilia"
+        ],
+        "right_answer": "brasilia"
+    },
+    {
+        "img": "kanada.png",
+        "options": [
+            "kanada",
+            "egypti",
+            "tunisia"
+        ],
+        "right_answer": "kanada"
+    },
+    {
+        "img": "ruotsi.png",
+        "options": [
+            "tanska",
+            "englanti",
+            "ruotsi"
+        ],
+        "right_answer": "ruotsi"
+    },
+    {
+        "img": "saksa.png",
+        "options": [
+            "belgia",
+            "irlanti",
+            "saksa"
+        ],
+        "right_answer": "saksa"
+    },
+    {
+        "img": "irak.png",
+        "options": [
+            "irak",
+            "syyria",
+            "yemen"
+        ],
+        "right_answer": "iraq"
+    },
+    {
+        "img": "libanon.png",
+        "options": [
+            "kanada",
+            "libanon",
+            "marocco"
+        ],
+        "right_answer": "lebanon"
+    },
+    {
+        "img": "meksiko.png",
+        "options": [
+            "italia",
+            "iran",
+            "meksiko"
+        ],
+        "right_answer": "meksiko"
+    },
+    {
+        "img": "somalia.png",
+        "options": [
+            "vietnam",
+            "somalia",
+            "albania"
+        ],
+        "right_answer": "somalia"
+    },
+    {
+        "img": "ranska.png",
+        "options": [
+            "italia",
+            "ranska",
+            "alankomaat"
+        ],
+        "right_answer": "ranska"
+    },
+    {
+        "img": "intia.png",
+        "options": [
+            "nigeria",
+            "intia",
+            "unkari"
+        ],
+        "right_answer": "intia"
+    },
+    {
+        "img": "sudan.png",
+        "options": [
+            "palestiina",
+            "yhdistyneet arabiemiraatit",
+            "sudan"
+        ],
+        "right_answer": "sudan"
+    },
+    {
+        "img": "saudi-arabia.png",
+        "options": [
+            "palestiina",
+            "saudi arabia",
+            "kuwaiti"
+        ],
+        "right_answer": "saudi arabia"
+    },
+    {
+        "img": "hongkong.png",
+        "options": [
+            "hong kong",
+            "haiti",
+            "japani"
+        ],
+        "right_answer": "hong kong"
+    },
+    {
+        "img": "latvia.png",
+        "options": [
+            "itävalta",
+            "latvia",
+            "liettua"
+        ],
+        "right_answer": "latvia"
+    },
+    {
+        "img": "liberia.png",
+        "options": [
+            "liberia",
+            "malesia",
+            "yhdysvallat"
+        ],
+        "right_answer": "yhdysvallat"
+    },
+    {
+        "img": "norja.png",
+        "options": [
+            "wales",
+            "uusi-seelanti",
+            "norja"
+        ],
+        "right_answer": "norja"
+    },
+    {
+        "img": "venäjä.png",
+        "options": [
+            "venäjä",
+            "valko-venäjä",
+            "viro"
+        ],
+        "right_answer": "venäjä"
+    },
+    {
+        "img": "monaco.png",
+        "options": [
+            "monaco",
+            "malediivit",
+            "puola"
+        ],
+        "right_answer": "monaco"
+    },
+    {
+        "img": "puola",
+        "options": [
+            "monaco",
+            "peru",
+            "puola"
+        ],
+        "right_answer": "puola"
+    }
+]
