@@ -7,18 +7,11 @@ checkBtn = document.querySelector(".check-word"),
 highScoresList = document.getElementById("high-scores-list");
 
 let correctWord, timer, guessesLeft, correctWordCount = 0;
-
-
 let highScores = JSON.parse(localStorage.getItem("highScores")) || [];
-
 
 const updateHighScores = () => {
     highScores.sort((a, b) => b.score - a.score);
-
-    
     localStorage.setItem("highScores", JSON.stringify(highScores));
-
-    
     window.location.href = "kooste.html";
 };
 
@@ -74,11 +67,13 @@ const checkWord = () => {
         }
     } else {
         correctWordCount++;
-        if (correctWordCount === words.length) { // Tarkistetaan, onko arvattu kaikki sanat
-            alert("Läpäisit pelin!");
+        if (correctWordCount === 5) {
+            // Laske lopullinen pistemäärä ottaen huomioon virheelliset arvaukset
+            const finalScore = 5 - (5 - correctWordCount);
+            alert(`Läpäisit pelin!`);
             const playerName = prompt("Anna nimesi High Score-taulukkoon:");
             if (playerName) {
-                highScores.push({ name: playerName, score: correctWordCount }); // Lisätään pisteet kaikista oikeista arvauksista
+                highScores.push({ name: playerName, score: finalScore });
                 localStorage.setItem("highScores", JSON.stringify(highScores));
                 updateHighScores();
             }
@@ -91,10 +86,6 @@ const checkWord = () => {
 
 
 
-refreshBtn.addEventListener("click", () => {
-    if(guessesLeft > 0) {
-        initGame()
-    }
-})
+refreshBtn.addEventListener("click", initGame);
 gameStartBtn.addEventListener("click", startGame);
 
