@@ -14,8 +14,80 @@ const quizData = [
     {
       question: "Minkä maan lippu?",
       flag: "./img/saksa.png",
-      options: ["Belgia", "Kiina", "Liettua", "Saksa"],
+      options: ["Belgia", "Saksa", "Liettua", "Moldova"],
       answer: "Saksa"
+    },
+    {
+      question: "Minkä maan lippu?",
+      flag: "./img/ruotsi.png",
+      options: ["Tanska", "englanti", "Ruotsi", "Suomi"],
+      answer: "Ruotsi"
+    },
+    {
+      question: "Minkä maan lippu?",
+      flag: "./img/latvia.png",
+      options: ["Puola", "Venäjä", "Liettua", "Latvia"],
+      answer: "Latvia"
+    },
+    {
+      question: "Minkä maan lippu?",
+      flag: "./img/saudi.arabia.png",
+      options: ["Sudan", "Saudi-arabia", "Pakistan", "Kuwait"],
+      answer: "Saudi-arabia"
+    },
+    {
+      question: "Minkä maan lippu?",
+      flag: "./img/norja.png",
+      options: ["Norja", "Tanska", "Färsaaret", "Georgia"],
+      answer: "Norja"
+    },
+    {
+      question: "Minkä maan lippu?",
+      flag: "./img/liberia.png",
+      options: ["Yhdysvallat", "Liberia", "Malesia", "Puerto rico"],
+      answer: "Liberia"
+    },
+    {
+      question: "Minkä maan lippu?",
+      flag: "./img/monaco.png",
+      options: ["Puola", "Singapore", "Monaco", "Tunisia"],
+      answer: "Monaco"
+    },
+    {
+      question: "Minkä maan lippu?",
+      flag: "./img/kanada.png",
+      options: ["Turkki", "tsekki", "sveitsi", "Kanada"],
+      answer: "Kanada"
+    },
+    {
+      question: "Minkä maan lippu?",
+      flag: "./img/meksiko.png",
+      options: ["Italia", "Meksiko", "Venezuela", "Kamerun"],
+      answer: "Meksiko"
+    },
+    {
+      question: "Minkä maan lippu?",
+      flag: "./img/somalia.png",
+      options: ["Guatemala", "Palau", "San marino", "Somalia"],
+      answer: "Somalia"
+    },
+    {
+      question: "Minkä maan lippu?",
+      flag: "./img/puola.png",
+      options: ["Puola", "Peru", "Malta", "Monaco"],
+      answer: "Puola"
+    },
+    {
+      question: "Minkä maan lippu?",
+      flag: "./img/venäjä.png",
+      options: ["Slovakia", "Slovenia", "Venäjä", "Unkari"],
+      answer: "Venäjä"
+    },
+    {
+      question: "Minkä maan lippu?",
+      flag: "./img/hongkong.png",
+      options: ["Vietnam", "Kiina", "Tunisia", "Hongkong"],
+      answer: "Hongkong"
     },
     // Add more questions here...
   ];
