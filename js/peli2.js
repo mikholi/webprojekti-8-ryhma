@@ -8,6 +8,8 @@ highScoresList = document.getElementById("high-scores-list");
 
 let correctWord, timer, guessesLeft, correctWordCount = 0;
 let highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+let timerInitValue = 30;
+let maxCorrectWordCount = 5;
 
 const updateHighScores = () => {
     highScores.sort((a, b) => b.score - a.score);
@@ -18,6 +20,7 @@ const updateHighScores = () => {
 
 const initTimer = maxTime => {
     clearInterval(timer);
+    timeText.innerText = maxTime;
     timer = setInterval(() => {
         if(maxTime > 0) {
             maxTime--;
@@ -30,8 +33,7 @@ const initTimer = maxTime => {
 };
 
 const initGame = () => {
-    guessesLeft = 5;
-    initTimer(30);
+    initTimer(timerInitValue);
     let randomObj = words[Math.floor(Math.random() * words.length)];
     let wordArray = randomObj.word.split("");
     for (let i = wordArray.length - 1; i > 0; i--) {
@@ -50,6 +52,7 @@ const gameStartBtn = document.querySelector(".start-game-btn");
 
 const startGame = () => {
     correctWordCount = 0; 
+    guessesLeft = 5;
     initGame();
 };
 
@@ -57,29 +60,35 @@ const checkWord = () => {
     let userWord = inputField.value.toLowerCase();
     if (!userWord) return alert("Anna sana tarkistettavaksi!");
 
+    guessesLeft--;
+
     if (userWord !== correctWord) {
-        guessesLeft--;
-        if (guessesLeft === 0) {
-            alert("Peli loppui, sinulla ei ole enää arvauksia jäljellä!");
-            initGame();
-        } else {
-            alert(`Hups! ${userWord} ei ole oikea sana! Sinulla on jäljellä ${guessesLeft} yritystä.`);
-        }
+        correctWordCount = (correctWordCount < 0) ? correctWordCount - 1 : correctWordCount;
+        alert(`Hups! ${userWord} ei ole oikea sana! Sinulla on jäljellä ${guessesLeft} yritystä.`);
     } else {
         correctWordCount++;
-        if (correctWordCount === 5) {
-            // Laske lopullinen pistemäärä ottaen huomioon virheelliset arvaukset
-            const finalScore = 5 - (5 - correctWordCount);
-            alert(`Läpäisit pelin!`);
+        initGame();
+    }
+
+    if (guessesLeft === 0) {
+        if (correctWordCount === maxCorrectWordCount) {
+            alert(`Läpäisit pelin! Pisteesi: ${correctWordCount}/${maxCorrectWordCount}`);
+        } else {
+            alert(`Peli loppui, sinulla ei ole enää arvauksia jäljellä! Pisteesi: ${correctWordCount}/${maxCorrectWordCount}`);
+        }
+        clearInterval(timer);
+
+        if (correctWordCount > 0) {
             const playerName = prompt("Anna nimesi High Score-taulukkoon:");
+
             if (playerName) {
-                highScores.push({ name: playerName, score: finalScore });
+                highScores.push({ name: playerName, score: correctWordCount });
                 localStorage.setItem("highScores", JSON.stringify(highScores));
                 updateHighScores();
             }
-            return;
         }
-        initGame();
+
+        return;
     }
 };
 
