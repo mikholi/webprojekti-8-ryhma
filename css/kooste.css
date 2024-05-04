@@ -15,29 +15,32 @@ p {
 
 
 #high-scores {
-    margin-bottom: 250px;
-    margin-right: 300px;
-    border-radius: 10px;
-    padding: 30px;
-    background-color: #f8f9fa; 
-  }
+  margin-bottom: 50px; 
+  margin-top: 100px; 
+  padding: 20px; 
+  max-width: 500px; 
+  margin-left: 5px; 
+  margin-right: auto;
+  background-color: bisque; 
+  border-style: solid;
+  border-radius: 10%;
+}
+
   
-  #high-scores h3 {
+  #high-scores h4 {
     font-family: 'Jersey 25', sans-serif;
     color: #343a40; 
+    text-align: center;
   }
   
   #high-scores-list {
     padding-left: 0;
   }
   
-  #high-scores-list .list-group-item {
-    background-color: #ffffff; /* Vaihda väri tarvittaessa */
-    border: none;
-  }
+  
   
   #high-scores-list .list-group-item:nth-child(even) {
-    background-color: #f8f9fa; /* Vaihda väri tarvittaessa */
+    background-color: #f8f9fa; 
   }
   
   #high-scores-list .list-group-item:first-child {
@@ -50,3 +53,17 @@ p {
     border-bottom-right-radius: 10px;
   }
 
+
+  #high-scores img {
+    max-width: 100%;
+    height: 50px;
+    
+    
+  }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+
+}
+  

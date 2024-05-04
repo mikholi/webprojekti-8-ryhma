@@ -74,11 +74,11 @@ const checkWord = () => {
         }
     } else {
         correctWordCount++;
-        if (correctWordCount === 15) {
+        if (correctWordCount === words.length) { // Tarkistetaan, onko arvattu kaikki sanat
             alert("Läpäisit pelin!");
             const playerName = prompt("Anna nimesi High Score-taulukkoon:");
             if (playerName) {
-                highScores.push({ name: playerName, score: correctWordCount - 1 });
+                highScores.push({ name: playerName, score: correctWordCount }); // Lisätään pisteet kaikista oikeista arvauksista
                 localStorage.setItem("highScores", JSON.stringify(highScores));
                 updateHighScores();
             }
@@ -90,6 +90,11 @@ const checkWord = () => {
 
 
 
-refreshBtn.addEventListener("click", initGame);
+
+refreshBtn.addEventListener("click", () => {
+    if(guessesLeft > 0) {
+        initGame()
+    }
+})
 gameStartBtn.addEventListener("click", startGame);
 

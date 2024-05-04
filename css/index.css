@@ -30,4 +30,6 @@ body {
     background-image: url(../img/digital-8280778_1280.jpg);
 }
 
-  
+.rounded-image {
+    border-radius: 20px; 
+}
