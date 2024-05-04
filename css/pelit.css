@@ -6,6 +6,9 @@
 
 body {
     background-image: url(../img/digital-8280778_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 85vh;
 }
 
 
@@ -22,4 +25,5 @@ h2 {
 a {
     font-family: "Corben", serif;
 }
+
 
