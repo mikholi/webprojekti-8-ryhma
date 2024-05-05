@@ -9,6 +9,8 @@ h1 {
     font-size: 3em;
 }
 
+
+
 .body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
@@ -138,5 +140,6 @@ body.overlay-is-open .main-ui {
 footer {
     position: fixed;
     bottom: 0;
+    width: 100%;
   }
 
