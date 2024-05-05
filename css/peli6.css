@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(185, 74, 0);
+}
+.sovellus{
+    background: #fff;
+    width: 90%;
+    height: 40%;
+    max-width: 1200px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+
+.sovellus h1{
+    text-align: center;
+    font-size: 50px;
+    color: #222;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+.quiz{
+    padding: 20px 0;
+}
+
+#spacer {
+    height: 35px;
+}
+.quiz h2{
+    font-size: 18px;
+    color: #222;
+    font-weight: 600;
+    
+}
+.butt{
+    background-color: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    margin-top: 15px;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+.butt:hover:not([disabled]){
+    background: rgb(185, 74, 0);
+    color: #fff;
+}
+.butt:disabled{
+    cursor: no-drop;
+}
+#seuraavanappi{
+    background: rgb(185, 74, 0);
+    color: #222;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+.correct {
+    background: #9aeabc;
+}
+.incorrect{
+    background: #ff9393;
+}
