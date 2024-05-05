@@ -1,18 +1,18 @@
-
-Viikko 14: 
-Aloitettiin sivuston idean kehittelyllä. Keskustelimme myös kohderyhmästä ja siitä millaisia pelejä voisimme sivustolle tehdä. 
+MIKKO:
+Sprintti 1:
+Aloitettiin sivuston idean kehittelyllä. Keskustelimme myös kohderyhmästä ja siitä millaisia pelejä voisimme sivustolle tehdä.
 Päädyimme ala-aste-ikäisille tarkoitettuihin peleihin. Jokainen opiskelija valitsi yhden oppiaineen josta tekisimme pelin.
-Githubin-repo tehty ja hacknplan-profiili. 
-Viikko 15: 
-Mikko: Sivuston koodausta käyttäen hyväksi bootsrapia. Navbar yms, tehty. Sivustolle tulevat sivut luotu, jokaista pitää kuitenkin
-hienosäätää.
-Viikko 16: 
-Mikko: Pelin koodaus aloitettu. 
-Viikko 17:
-Mikko: Info-sivusto tehty käyttäen bootsrapin carousel-tekniikkaa. Jostakin syystä oli vaikeuksia sovittaa carousel sivulle 
-footerin kanssa ja sitä piti kikkailla css:n avulla, sain kuitenkin toimimaan. Kokeiluista huolimatta en saanut reponsiiviseksi
+Githubin-repo tehty ja hacknplan-profiili.
+Sprintti 2:
+Sivuston koodausta käyttäen hyväksi bootsrapia. Navbar yms, tehty. Sivustolle tulevat sivut luotu, jokaista pitää kuitenkin
+hienosäätää. Sivuston ulkoasua kokeiltu monilla eri vaihtoehdoilla ja valittu niistä parhaat ja aloitettu työstämään niitä. Vaativat vielä hienosäätöä jotka tehdään projektin loppuvaiheessa.
+Sprintti 3:
+Pelin koodaus aloitettu suurpiirteittäin. Kokeiltu erilaisia vaihtoehtoja, bugeja tullut vastaan joita sitten korjailtu. Mietitty eri toimintoja joita kokeiltu mutta jätettiin myös pois.
+Sprintti 4:
+Info-sivusto tehty käyttäen bootsrapin carousel-tekniikkaa. Jostakin syystä oli vaikeuksia sovittaa carousel sivulle
+footerin kanssa ja sitä piti kikkailla css:n avulla, sain kuitenkin toimimaan. Kokeiluista huolimatta kaikkia sivuja ei saatu täysin responsiiviseksi.
 eikä sivu näy oikein esimerkiksi kännykän ruudulla katsottuna.
-Viikko 18:
-Mikko: Peli ja high score saatu valmiiksi. En ole varma onko ihan paras logiikka pisteiden laskuun.. Webbi-projekti julkaistu 
-Github-pages palveluun. 
+Sprintti 5:
+Peli ja high score saatu valmiiksi. Sivuston viimeisiä viilauksia eri opiskelijoiden toimesta. En ole varma onko ihan paras logiikka pisteiden laskuun.. Webbi-projekti julkaistu
+Github-pages palveluun.
 
