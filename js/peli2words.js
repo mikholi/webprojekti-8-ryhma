@@ -98,10 +98,10 @@ let words = [
     {
         word: "teksti",
         hint: "luettavaksi tarkoitettu kirjoitus"
-    }, //25 sanaa
+    }, 
     {
         word: "aakkoset",
         hint: "a,b,c,d,e,f,g..."
-    },
+    }, //Pelin sanat tulee randomisti tästä luettelosta//
     
 ]
