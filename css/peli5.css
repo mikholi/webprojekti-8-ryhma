@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#question {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.option {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: antiquewhite;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+  }
+  .options-container {
+    margin-top: 30px;
+}
+#spacer {
+    height: 120px; 
+}
+img {
+    height: 300px;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+html, body {
+    background-image: url(../img/uskonto.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#otsikko {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px; 
+    margin-bottom: 20px; 
+}
