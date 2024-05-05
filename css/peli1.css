@@ -5,7 +5,10 @@ footer {
 }
 
 body {
-    background: url(../img/bg.jpeg);
+    background: url(../img/bg.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 85vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -55,15 +58,4 @@ button {
 
 button:hover {
     background-color: #e0e0e0;
-}
-
-#play-again {
-    display: block;
-    margin: 20px auto 0;
-    padding: 10px 20px;
-    background-color: rgb(227, 238, 10), 245, 161;
-    color: #131313;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
 }

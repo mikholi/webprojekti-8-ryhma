@@ -134,7 +134,7 @@ const quizData = [
       if (currentQuestion < quizData.length) {
           showQuestion();
       } else {
-          setTimeout(showResult, 1000); // Delay the result display to allow the player to see their final score before the alert
+          setTimeout(showResult, 1000);
       }
   
       scoreElement.textContent = `Pisteet: ${score} | Paras tulos: ${parastulos[0] ? parastulos[0].score : 0}`;
@@ -148,14 +148,14 @@ const quizData = [
           parastulos.sort((a, b) => b.score - a.score);
           localStorage.setItem("parastulos", JSON.stringify(parastulos));
           updateScoreboard();
-          alert(`Sait ${score}/${quizData.length} oikein! Paras tulos: ${score}`);
+          alert(`Sait ${score}/${quizData.length} oikein!`);
       }
   }
   
   function updateScoreboard() {
     localStorage.setItem("parastulos", JSON.stringify(parastulos));
     if (currentQuestion >= quizData.length) {
-        window.location.href = "kooste.html"; // Redirect to the high scores page only if the game is finished
+        window.location.href = "kooste.html";
     }
 }
 
