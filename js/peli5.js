@@ -12,7 +12,7 @@ const questions = [
     },
     {
         question: "Mitä uskontoa symboli kuvaa?",
-        image: "./kuvat/buddha.jpg",
+        image: "./img/buddha.jpg",
         options: ["Kristinusko", "Islam", "Hindulaisuus", "Buddhalaisuus"],
         answerIndex: 3 
     },
