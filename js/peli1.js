@@ -92,71 +92,73 @@ const quizData = [
     // Add more questions here...
   ];
   
+  
   const questionElement = document.getElementById("question");
   const flagElement = document.getElementById("flag");
   const optionsElement = document.getElementById("options");
-  const submitButton = document.getElementById("submit");
   const scoreElement = document.getElementById("score");
+  highScoresList = document.getElementById("high-scores-listt");
   
   let currentQuestion = 0;
   let score = 0;
-  let highScore = localStorage.getItem("Paras tulos") || 0;
-  scoreElement.textContent = `Pisteet: ${score} | Paras tulos: ${highScore}`;
+  let parastulos = JSON.parse(localStorage.getItem("parastulos")) || [];
+  updateScoreboard();
   
   function showQuestion() {
-    const question = quizData[currentQuestion];
-    questionElement.innerText = question.question;
-    flagElement.src = question.flag;
+      const question = quizData[currentQuestion];
+      questionElement.innerText = question.question;
+      flagElement.src = question.flag;
   
-    optionsElement.innerHTML = "";
-    question.options.forEach(option => {
-      const button = document.createElement("button");
-      button.innerText = option;
-      optionsElement.appendChild(button);
-      button.addEventListener("click", selectAnswer);
-    });
+      optionsElement.innerHTML = "";
+      question.options.forEach(option => {
+          const button = document.createElement("button");
+          button.innerText = option;
+          optionsElement.appendChild(button);
+          button.addEventListener("click", selectAnswer);
+      });
   }
   
   function selectAnswer(e) {
-    const selectedButton = e.target;
-    const answer = quizData[currentQuestion].answer;
+      const selectedButton = e.target;
+      const answer = quizData[currentQuestion].answer;
   
-    if (selectedButton.innerText === answer) {
-      selectedButton.style.backgroundColor = "green";
-      score++;
-    } else {
-      selectedButton.style.backgroundColor = "red";
-    }
+      if (selectedButton.innerText === answer) {
+          selectedButton.classList.add("correct");
+          score++;
+      } else {
+          selectedButton.classList.add("incorrect");
+      }
   
-    currentQuestion++;
+      currentQuestion++;
   
-    if (currentQuestion < quizData.length) {
-      showQuestion();
-    } else {
-      showResult();
-    }
-    
-    scoreElement.textContent = `Pisteet: ${score} | Paras tulos: ${highScore}`;
+      if (currentQuestion < quizData.length) {
+          showQuestion();
+      } else {
+          setTimeout(showResult, 1000); // Delay the result display to allow the player to see their final score before the alert
+      }
+  
+      scoreElement.textContent = `Pisteet: ${score} | Paras tulos: ${parastulos[0] ? parastulos[0].score : 0}`;
   }
   
   function showResult() {
-    if (score > highScore) {
-      highScore = score;
-      localStorage.setItem("Paras tulos", highScore);
-    }
-
-    quiz.innerHTML = `
-      <h1>Peli loppui!</h1>
-      <p>pisteet: ${score}/${quizData.length}</p>
-      <p>Paras tulos: ${highScore}</p>
-    `;
+      const playerName = prompt("Peli loppui! Syötä nimesi:");
+      if (playerName) {
+          const playerScore = { name: playerName, score: score };
+          parastulos.push(playerScore);
+          parastulos.sort((a, b) => b.score - a.score);
+          localStorage.setItem("parastulos", JSON.stringify(parastulos));
+          updateScoreboard();
+          alert(`Sait ${score}/${quizData.length} oikein! Paras tulos: ${score}`);
+      }
   }
   
-  function startQuizAgain() {
-    currentQuestion = 0;
-    score = 0;
-    showQuestion();
-  }
+  function updateScoreboard() {
+    localStorage.setItem("parastulos", JSON.stringify(parastulos));
+    if (currentQuestion >= quizData.length) {
+        window.location.href = "kooste.html"; // Redirect to the high scores page only if the game is finished
+    }
+}
+
+
   
   showQuestion();
-  
