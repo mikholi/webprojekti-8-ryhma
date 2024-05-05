@@ -56,7 +56,7 @@ const startGame = () => {
     initGame();
 };
 
-const checkWord = () => {
+const checkWord = () => { 
     let userWord = inputField.value.toLowerCase();
     if (!userWord) return alert("Anna sana tarkistettavaksi!");
 

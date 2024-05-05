@@ -5,7 +5,7 @@
 
 
 body {
-    background-image: url(../img/digital-8280778_1280.jpg);
+    background-image: url(../img/clean-2721102_1280.jpg);
     background-size: cover;
     background-position: center;
     min-height: 85vh;
@@ -17,8 +17,9 @@ p {
     
 }
 
-h2 {
+h1 {
     font-family: "Corben", serif;
+    color: aliceblue;
     
 }
 
