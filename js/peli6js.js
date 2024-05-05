@@ -171,8 +171,8 @@ function selectAnswer(e){
 
 function showScore(){
     resetState();
-    questionelement.innerHTML = "You scored "+score+ " out of " + questions.length+"!";
-    seuraavanappii.innerHTML = "Play Again"
+    questionelement.innerHTML = "Sait "+score+ " pistettä " + questions.length+":sta kysymyksestä!";
+    seuraavanappii.innerHTML = "Pelaa uudelleen"
     seuraavanappii.style.display = "block";
 }
 
