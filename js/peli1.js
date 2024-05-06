@@ -112,6 +112,9 @@ const quizData = [
 }
 
 shuffleArray(quizData);
+quizData.forEach(question => {
+  question.options = shuffleArray(question.options);
+});
   
   function showQuestion() {
       const question = quizData[currentQuestion];
