@@ -20,7 +20,7 @@ const quizData = [
     {
       question: "Minkä maan lippu?",
       flag: "./img/ruotsi.png",
-      options: ["Tanska", "englanti", "Ruotsi", "Suomi"],
+      options: ["Tanska", "Englanti", "Ruotsi", "Suomi"],
       answer: "Ruotsi"
     },
     {
@@ -56,7 +56,7 @@ const quizData = [
     {
       question: "Minkä maan lippu?",
       flag: "./img/kanada.png",
-      options: ["Turkki", "tsekki", "sveitsi", "Kanada"],
+      options: ["Turkki", "Tsekki", "Sveitsi", "Kanada"],
       answer: "Kanada"
     },
     {
@@ -89,7 +89,6 @@ const quizData = [
       options: ["Vietnam", "Kiina", "Tunisia", "Hongkong"],
       answer: "Hongkong"
     },
-    // Add more questions here...
   ];
   
   
@@ -103,6 +102,16 @@ const quizData = [
   let score = 0;
   let parastulos = JSON.parse(localStorage.getItem("parastulos")) || [];
   updateScoreboard();
+
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
+shuffleArray(quizData);
   
   function showQuestion() {
       const question = quizData[currentQuestion];
